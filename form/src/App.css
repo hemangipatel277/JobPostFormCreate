@@ -1,6 +1,6 @@
 /* 457b9d
 f1faee */
-h1{
+/* .h1{
   text-align: left;
   width: 100%;
   font-weight:600;
@@ -10,7 +10,7 @@ h1{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-h2{
+.h2{
 text-align: left;
 width: 100%;
 font-weight: bold;
@@ -18,7 +18,7 @@ font-size: 100%;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-label{
+.label{
 font-size: 1rem;
 margin-bottom: 0.5cm;
 color:black;
@@ -27,20 +27,20 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 
 }
 
-input {
+.input {
   padding: 10px 100px;
   border-radius: 0px;
   outline:#999999;
   border: 1px solid #cfcfcf; 
 }
 
-input ::placeholder {
+.input ::placeholder {
   font-size: 1rem;
   font-weight: lighter;
   color: #999999;
 }
 
-input.error{
+.input.error{
   border: 1px solid red;
 }
 
@@ -71,7 +71,7 @@ input.error{
     .functionalArea{
       margin-right: 100%;
     }
-  .Wrapper{
+  .Container{
     height:100vh;
     width: 100%;
     display: flex;
@@ -82,9 +82,13 @@ input.error{
     border-bottom-color: #f4f4f4;
     border-bottom-width: 1;
 
+  } 
+.App{
+    width: 500px;
+    margin:0 auto;
   }
-
-   .form-Wrapper{
+ 
+.form-Wrapper{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -95,10 +99,10 @@ input.error{
     box-shadow: 0px 20px 50px white;;
   }
 
-  form {
-    width: 100%;
+.form {
+    width: 500%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
   }
 
   .postJob button{
@@ -113,7 +117,24 @@ input.error{
     margin-bottom: 0.25em;
     margin-right: 5px;
     }
+     
+    .textarea{
+      width: fit-content;
+      padding: 10px 100px;
+      border-radius: 0px;
+      outline:#999999;
+      border: 1px solid #cfcfcf;
+    }
+    .textarea ::placeholder {
+      font-size: 1rem;
+      font-weight: lighter;
+      color: #999999;
+    }
     
+    .textarea.error{
+      border: 1px solid red;
+    }
+
     .postJob button:hover{ 
         color: #519e8a;
         background-color: #fff;
@@ -143,4 +164,80 @@ input.error{
   .postJobandAddANotherJob small{
     color: #999999;
     font-weight: lighter;
+  } */
+  * {
+    box-sizing: border-box;
+}
+ .App {
+     max-width: 450px;
+     margin: 0 auto;
+}
+ /* p {
+     text-align: center;
+     font-weight: 500;
+} */
+ input[type=text], select, textarea {
+     width: 100%;
+     padding: 12px;
+     border: 1px solid #B9c0b0;
+     border-radius: 0px;
+     box-sizing:border-box;
+     margin-top: 6px;
+     margin-bottom: 16px;
+     resize: vertical;
+}
+ input[type=submit] {
+     background-color: #4CAF50;
+     color: white;
+     padding: 12px 20px;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+}
+ .container {
+     border-radius: 5px;
+     background-color: #f2f2f2;
+     padding: 20px;
+}
+.postJob button{
+  background-color: #519e8a;
+  color: #fff;
+  width:fit-content ;
+  margin-top: 1em;
+  font-size: 1em;
+  padding: 10px 0px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  margin-bottom: 0.25em;
+  margin-right: 5px;
   }
+  .postJob button:hover{ 
+    color: #519e8a;
+    background-color: #fff;
+    border: 1px #519e8a;
+}
+.postJob small{
+  color: #999999;
+  font-weight: lighter;
+}
+
+.postJobandAddANotherJob button{
+  background-color:  #fff;
+  color : #519e8a;
+  width:fit-content;
+  margin-top: 1em;
+  margin-bottom: 0.25em;
+  padding: 10px 0px;
+  letter-spacing: 1px;
+  font-size: 1em;
+  font-weight: lighter;
+}
+.postJobandAddANotherJob button:hover{ 
+  color: #fff;
+  background-color: #519e8a;
+  border: 1px #fff;
+}
+.postJobandAddANotherJob small{
+color: #999999;
+font-weight: lighter;
+} 
