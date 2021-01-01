@@ -1,243 +1,176 @@
 /* 457b9d
 f1faee */
-/* .h1{
-  text-align: left;
-  width: 100%;
-  font-weight:600;
-  font-size:1.5em;
-  border-bottom-color: #fcfcfc;
-  border-bottom-width: 1;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+* {
+  box-sizing: border-box;
 }
-
-.h2{
-text-align: left;
-width: 100%;
-font-weight: bold;
-font-size: 100%;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.App {
+   max-width: 600px;
+   margin: 0 auto;
 }
-
-.label{
-font-size: 1rem;
-margin-bottom: 0.5cm;
-color:black;
-font-weight: lighter;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-}
-
-.input {
-  padding: 10px 100px;
-  border-radius: 0px;
-  outline:#999999;
-  border: 1px solid #cfcfcf; 
-}
-
-.input ::placeholder {
-  font-size: 1rem;
-  font-weight: lighter;
-  color: #999999;
-}
-
-.input.error{
-  border: 1px solid red;
-}
-
-.errormessage{
-  color:red;
-  font-size: 0.75em;
-  display: relative;
-}
-
-.jobTitle{
-  margin-right: 5%;
-  }
-
-  .location{
-    margin-right: 100%;
-  }
-
-  .yearsOfExperience{
-    margin-right: 100%;
-  }
-   
-  .tag{
-    margin-right: 100%;
-  }   
-  .category{
-    margin-right: 100%;
-  }
-    .functionalArea{
-      margin-right: 100%;
-    }
-  .Container{
-    height:100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-bottom-color: #f4f4f4;
-    border-bottom-width: 1;
-
-  } 
-.App{
-    width: 500px;
-    margin:0 auto;
-  }
- 
-.form-Wrapper{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding:40px 60px;
-    border-radius: 10px;
-    box-shadow: 0px 20px 50px white;;
-  }
-
-.form {
-    width: 500%;
-    display: flex;
-    flex-wrap:wrap;
-  }
-
-  .postJob button{
-    background-color: #519e8a;
-    color: #fff;
-    width:fit-content ;
-    margin-top: 1em;
-    font-size: 1em;
-    padding: 10px 0px;
-    font-weight: lighter;
-    letter-spacing: 1px;
-    margin-bottom: 0.25em;
-    margin-right: 5px;
-    }
-     
-    .textarea{
-      width: fit-content;
-      padding: 10px 100px;
-      border-radius: 0px;
-      outline:#999999;
-      border: 1px solid #cfcfcf;
-    }
-    .textarea ::placeholder {
-      font-size: 1rem;
-      font-weight: lighter;
-      color: #999999;
-    }
-    
-    .textarea.error{
-      border: 1px solid red;
-    }
-
-    .postJob button:hover{ 
-        color: #519e8a;
-        background-color: #fff;
-        border: 1px #519e8a;
-    }
-    .postJob small{
-      color: #999999;
-      font-weight: lighter;
-    }
-
-    .postJobandAddANotherJob button{
-      background-color:  #fff;
-      color : #519e8a;
-      width:fit-content;
-      margin-top: 1em;
-      margin-bottom: 0.25em;
-      padding: 10px 0px;
-      letter-spacing: 1px;
-      font-size: 1em;
-      font-weight: lighter;
-    }
-    .postJobandAddANotherJob button:hover{ 
-      color: #fff;
-      background-color: #519e8a;
-      border: 1px #fff;
-  }
-  .postJobandAddANotherJob small{
-    color: #999999;
-    font-weight: lighter;
-  } */
-  * {
-    box-sizing: border-box;
-}
- .App {
-     max-width: 450px;
-     margin: 0 auto;
-}
- /* p {
-     text-align: center;
-     font-weight: 500;
+/* p {
+   text-align: center;
+   font-weight: 500;
 } */
- input[type=text], select, textarea {
-     width: 100%;
-     padding: 12px;
-     border: 1px solid #B9c0b0;
-     border-radius: 0px;
-     box-sizing:border-box;
-     margin-top: 6px;
-     margin-bottom: 16px;
-     resize: vertical;
+input[type=text],  textarea {
+   width: 100%;
+   padding: 12px;
+   border: 1px solid #B9c0b0;
+   border-radius: 0px;
+   box-sizing:border-box;
+   margin-top: 6px;
+   margin-bottom: 16px;
+   resize: vertical;
 }
- input[type=submit] {
-     background-color: #4CAF50;
-     color: white;
-     padding: 12px 20px;
-     border: none;
-     border-radius: 4px;
-     cursor: pointer;
+input[type=submit] {
+   background-color: #4CAF50;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
 }
- .container {
-     border-radius: 5px;
-     background-color: #f2f2f2;
-     padding: 20px;
+
+select{
+width:49%;
+padding: 10px;
+border: 1px solid #B9c0b0;
+border-radius: 0px;
+box-sizing:border-box;
+margin: 2px;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;
+}
+/* .select option{
+
+} */
+.container {
+   border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 20px;
 }
 .postJob button{
-  background-color: #519e8a;
-  color: #fff;
-  width:fit-content ;
-  margin-top: 1em;
-  font-size: 1em;
-  padding: 10px 0px;
-  font-weight: lighter;
-  letter-spacing: 1px;
-  margin-bottom: 0.25em;
-  margin-right: 5px;
-  }
-  .postJob button:hover{ 
-    color: #519e8a;
-    background-color: #fff;
-    border: 1px #519e8a;
+background-color: #519e8a;
+color: #fff;
+width:fit-content ;
+margin-top: 1em;
+font-size: 1em;
+padding: 8px 5px;
+font-weight: lighter;
+letter-spacing: 1px;
+margin-bottom: 0.25em;
+margin:2px;
+border-color: #519e8a; 
 }
 .postJob small{
-  color: #999999;
-  font-weight: lighter;
+color: #999999;
+font-weight: lighter;
 }
 
 .postJobandAddANotherJob button{
-  background-color:  #fff;
-  color : #519e8a;
-  width:fit-content;
-  margin-top: 1em;
-  margin-bottom: 0.25em;
-  padding: 10px 0px;
-  letter-spacing: 1px;
-  font-size: 1em;
-  font-weight: lighter;
+background-color:  #fff;
+color : #519e8a;
+width:fit-content;
+margin-top: 1em;
+margin-bottom: 0.25em;
+padding: 8px 0px;
+letter-spacing: 1px;
+font-size: 1em;
+font-weight: lighter;
 }
 .postJobandAddANotherJob button:hover{ 
-  color: #fff;
-  background-color: #519e8a;
-  border: 1px #fff;
+color: #fff;
+background-color: #519e8a;
+border: 1px #fff;
 }
 .postJobandAddANotherJob small{
 color: #999999;
 font-weight: lighter;
 } 
+
+#root{
+    margin: 0 auto;
+  width: 1024px;
+}
+.category-box {
+width: 50%;
+float: left;
+}
+.category-box select {
+width: 98%;
+}
+
+
+/*  Tags related css */
+
+* {
+font-family: sans-serif;
+font-size: 17px;
+}
+
+body {
+background: #f2f2f2;
+padding: 20px;
+}
+
+.input-tag {
+background: white;
+border: 1px solid #d6d6d6;
+border-radius: 2px;
+display: flex;
+flex-wrap: wrap;
+padding: 5px 5px 0;
+}
+
+.input-tag input {
+border: none;
+width: 100%;
+}
+
+.input-tag__tags {
+display: inline-flex;
+flex-wrap: wrap;
+margin: 0;
+padding: 0;
+width: 100%;
+}
+
+.input-tag__tags li {
+align-items: center;
+background: #85A3BF;
+border-radius: 2px;
+color: white;
+display: flex;
+font-weight: 300;
+list-style: none;
+margin-bottom: 5px;
+margin-right: 5px;
+padding: 5px 10px;
+}
+
+.input-tag__tags li button {
+align-items: center;
+appearance: none;
+background: #333333;
+border: none;
+border-radius: 50%;
+color: white;
+cursor: pointer;
+display: inline-flex;
+font-size: 12px;
+height: 15px;
+justify-content: center;
+line-height: 0;
+margin-left: 8px;
+padding: 0;
+transform: rotate(45deg);
+width: 15px;
+}
+
+.input-tag__tags li.input-tag__tags__input {
+background: none;
+flex-grow: 1;
+padding: 0;
+height: 50px;
+}
