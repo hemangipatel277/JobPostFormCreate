@@ -1,33 +1,11 @@
 /* 457b9d
 f1faee */
-.postJob button{
-background-color: #519e8a;
-color: #fff;
-width: 100% ;
-margin-top: 1em;
-font-size: 1em;
-padding: 8px 0px;
-font-weight: lighter;
-letter-spacing: 1px;
-margin-bottom: 0.25em;
-}
-
-postJob button:hover{ 
-    color: #519e8a;
-    background-color: #fff;
-    border: 2px solid #519e8a;
-}
-postJob small{
-  color: #999999;
-  font-weight: lighter;
-}
-
 h1{
   text-align: left;
   width: 100%;
   font-weight:600;
   font-size:1.5em;
-  border-bottom-color: #f4f4f4;
+  border-bottom-color: #fcfcfc;
   border-bottom-width: 1;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -52,7 +30,7 @@ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubun
 input {
   padding: 10px 100px;
   border-radius: 0px;
-  outline: none;
+  outline:#999999;
   border: 1px solid #cfcfcf; 
 }
 
@@ -73,17 +51,26 @@ input.error{
 }
 
 .jobTitle{
-  margin-right: 1%;
+  margin-right: 5%;
   }
 
   .location{
-    margin-right: 1%;
+    margin-right: 100%;
   }
 
-  .yearsofexperience{
-    margin-right: 1%;
+  .yearsOfExperience{
+    margin-right: 100%;
   }
-
+   
+  .tag{
+    margin-right: 100%;
+  }   
+  .category{
+    margin-right: 100%;
+  }
+    .functionalArea{
+      margin-right: 100%;
+    }
   .Wrapper{
     height:100vh;
     width: 100%;
@@ -93,12 +80,12 @@ input.error{
     align-items: center;
     background-color: white;
     border-bottom-color: #f4f4f4;
-  border-bottom-width: 1;
+    border-bottom-width: 1;
 
   }
 
    .form-Wrapper{
-    width: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,4 +93,54 @@ input.error{
     padding:40px 60px;
     border-radius: 10px;
     box-shadow: 0px 20px 50px white;;
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .postJob button{
+    background-color: #519e8a;
+    color: #fff;
+    width:fit-content ;
+    margin-top: 1em;
+    font-size: 1em;
+    padding: 10px 0px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin-bottom: 0.25em;
+    margin-right: 5px;
+    }
+    
+    .postJob button:hover{ 
+        color: #519e8a;
+        background-color: #fff;
+        border: 1px #519e8a;
+    }
+    .postJob small{
+      color: #999999;
+      font-weight: lighter;
+    }
+
+    .postJobandAddANotherJob button{
+      background-color:  #fff;
+      color : #519e8a;
+      width:fit-content;
+      margin-top: 1em;
+      margin-bottom: 0.25em;
+      padding: 10px 0px;
+      letter-spacing: 1px;
+      font-size: 1em;
+      font-weight: lighter;
+    }
+    .postJobandAddANotherJob button:hover{ 
+      color: #fff;
+      background-color: #519e8a;
+      border: 1px #fff;
+  }
+  .postJobandAddANotherJob small{
+    color: #999999;
+    font-weight: lighter;
   }
